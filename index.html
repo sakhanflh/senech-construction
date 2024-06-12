@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>senech.corp</title>
+
+    <!-- Goggle Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Goggle Font -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9882d00535.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+</head>
+<body>
+    <header> 
+        <div class="nav-img-wrapper">
+            <img src="img/senech-black.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Beranda</a>
+                </li>
+                <li>
+                    <a href="#about-us">Tentang kami</a>
+                </li>
+                <li>
+                    <a href="#jenis-pekerjaan">Jenis Pekerjaan</a>
+                    <i class="fa-solid fa-chevron-down dropdown"></i>
+                    <span class="dropdown-list">
+                        <a href="#structure">Struktur</a>
+                        <a href="">Konstruksi</a>
+                        <a href="">Interior</a>
+                    </span>
+                </li>
+                <li>
+                    <a href="#contact">Kontak</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <input class="login-btn login-click" type="button" value="Login Now">
+            <!-- <input type="button" value="Register"> -->
+            <div class="profile">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="mode-toggle">
+                <div class="light-dark-btn"></div>
+                    <i class="fa-regular fa-sun light-icon"></i>
+                    <i class="fa-regular fa-moon dark-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Mobile -->
+    <header id="header-mobile">
+        <div class="header-img-mobile">
+            <img src="img/senech-black.png" alt="">
+        </div>
+        <div class="hamburger">
+            <img src="img/icons8-hamburger-48.png" alt="">
+        </div>
+
+        <nav class="nav-mobile">
+            <ul>
+                <li>
+                    <a href="#home">Beranda</a>
+                </li>
+                <li>
+                    <a href="#about-us">Tentang kami</a>
+                </li>
+                <li>
+                    <a href="#jenis-pekerjaan">Jenis Pekerjaan</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontak</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Mobile End -->
+
+
+    <!-- Login Modal -->
+
+    <div class="modal-login-overlay">
+        <div class="modal-login-wrapper">
+            <h1>LOGIN</h1>
+            <form action="" class="modal-login-card">
+                <div>
+                    <label for="modal-email">E - Mail</label>
+                    <input type="text" name="modal-email" id="modal-email" placeholder="">
+                </div>
+                <div>
+                    <label for="modal-pass">Password</label>
+                    <input type="text" name="modal-pass" id="modal-pass" placeholder="">
+                </div>
+                <div>
+                    <a href="">Forget your password ?</a>
+                </div>
+                <input type="button" value="LOGIN">
+                <div>
+                    <p>Don't have an account? </p>
+                    <input type="button" class="create-account" style="cursor: pointer; color: #19A7CE; text-decoration: none; background-color: transparent; width: max-content;" value="Sign Up">
+                </div>
+            </form>
+        </div>
+        <div class="modal-register-card">
+            <button class="close-modal" onclick="closeModal()">
+                <span></span>
+                <span></span>
+            </button>
+            <h1>REGISTER</h1>
+            <form action="" class="modal-register-wrapper">
+                <div>
+                    <label for="modal-user">Username</label>
+                    <input type="text" name="modal-user" id="modal-user" placeholder="">
+                </div>
+                <div>
+                    <label for="modal-register-email">E-Mail</label>
+                    <input type="text" name="modal-register-email" id="modal-register-email" placeholder="">
+                </div>
+                <div>
+                    <label for="modal-password">Password</label>
+                    <input type="text" name="modal-password" id="modal-password" placeholder="">
+                </div>
+                <input type="button" value="REGISTER">
+                <div>
+                    <p>Already have an account?</p>
+                    <input type="button" class="login-modal-button login-click" value="Login Now">
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- Main Start -->
+    <main>
+        
+        <section id="home">
+            <div class="hero-img-wrapper">
+                <!-- <img src="./img/hero-img.jpg" alt=""> -->
+            </div>
+            <div class="hero-desc">
+                <div>
+                    <p>STRUKTUR</p>
+                    <p>ARSITEKTUR</p>
+                    <p>INTERIOR</p>
+                </div>
+                <h1>senech.corp</h1>
+                <div class="hero-slogan">
+                    <p>
+                        Wujudkan bangunan sesuai keinginan
+                        <span style="font-weight: bold;">Harga</span> dan <span style="font-weight: bold;">kualitas</span> boleh bersaing tanpa harus membanting
+                    </p>
+                </div>
+            </div>
+            <div class="hero-line">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="utility-wrapper">
+                <div class="utility">
+                    <div>
+                        <h1>5 +</h1>
+                        <p>Years Experience</p>
+                    </div>
+                    <div>
+                        <h1>200 +</h1>
+                        <p>Profesional Workers</p>
+                    </div>
+                    <div>
+                        <h1>10K +</h1>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <div class="about-us-wrapper">
+                <svg class="about-us-svg" xmlns="http://www.w3.org/2000/svg" width="100" height="200" fill="none" viewBox="0 0 200 200" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><g clip-path="url(#clip0_105_560)"><path fill="rgba(176, 218, 255, 1)" fill-rule="evenodd" d="M200 100.671 100 0 0 100.671h98.667L0 200h200l-98.667-99.329H200Z" clip-rule="evenodd"></path></g></svg>
+                <aside class="about-us-img">
+                    <img src="./img/constructor-1.jpg" alt="" class="our-img">
+                </aside>
+                <article class="about-us-desc-wrapper">
+                    <p style="font-size: 13px; letter-spacing: 5px; color: #19A7CE;">ABOUT US</p>
+                    <h1>Mengenal Lebih Jauh <span style="color: #19A7CE;">Tentang Kami</span></h1>
+                    <div class="about-us-desc">
+                        <p>Kami adalah perusahaan konstruksi terkemuka yang berdedikasi untuk memberikan hasil terbaik dalam setiap proyek yang kami tangani. Dengan pengalaman bertahun-tahun di industri ini, kami menawarkan layanan yang mencakup desain, pembangunan, dan renovasi.</p>
+                    </div>
+                    <div>
+                        <input type="button" value="Contact Us">
+                    </div>
+                </article>
+            </div>
+            <article class="our-service-wrapper">
+                <p>SERVICES</p>
+                <h1>What We Do ?</h1>
+                <div class="our-service">
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        <h1>CONSULTING</h1>
+                        <p>Kami menawarkan layanan konsultasi pembangunan untuk membantu Anda merencanakan dan melaksanakan proyek konstruksi dengan efisiensi dan kualitas terbaik.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-city"></i>
+                        <h1>ARCHITECTURE</h1>
+                        <p>Kami menawarkan desain inovatif dan estetika yang fungsional untuk berbagai jenis proyek, mulai dari bangunan residensial hingga komersial.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gears"></i>
+                        <h1>RENOVATION</h1>
+                        <p>Kami menyediakan layanan renovasi yang dirancang untuk memperbarui dan meningkatkan kualitas ruang Anda, baik itu rumah, kantor, atau bangunan komersial.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Jenis Pekerjaan Section Start-->
+        <section id="jenis-pekerjaan">
+            <p>PROJECT</p>
+            <h1>Jenis Jenis Pekerjaan</h1>
+            <div class="project-wrapper">
+                <svg class="project-svg-1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 64 64" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path id="SvgjsPath1178" d="M4 15.51a1 1 0 0 0 .71-.29L15.22 4.71a1 1 0 1 0-1.42-1.42L3.29 13.8a1 1 0 0 0 0 1.42 1 1 0 0 0 .71.29zm0 11.38a1 1 0 0 0 .71-.29L26.6 4.71a1 1 0 1 0-1.42-1.42L3.29 25.18a1 1 0 0 0 0 1.42 1 1 0 0 0 .71.29zm0 11.36a1 1 0 0 0 .71-.25L38 4.71a1 1 0 1 0-1.42-1.42L3.29 36.54a1 1 0 0 0 0 1.42 1 1 0 0 0 .71.29zm0 11.38a1 1 0 0 0 .71-.29L49.34 4.71a1 1 0 1 0-1.42-1.42L3.29 47.92a1 1 0 0 0 0 1.42 1 1 0 0 0 .71.29zM60.71 3.29a1 1 0 0 0-1.42 0l-56 56a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l56-56a1 1 0 0 0 0-1.42zm-1.42 11.37L14.66 59.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l44.63-44.63a1 1 0 0 0-1.42-1.42zm0 11.34L26 59.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l33.29-33.25A1 1 0 0 0 59.29 26zm0 11.4L37.4 59.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l21.89-21.89a1 1 0 0 0-1.42-1.42zm0 11.38L48.78 59.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L60.71 50.2a1 1 0 0 0-1.42-1.42z" data-name="Layer 9" fill="#B0DAFF"></path></svg>
+                <svg class="project-svg-2" xmlns="http://www.w3.org/2000/svg" width="100" height="200" fill="none" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path fill="rgba(176, 218, 255, 1)" fill-rule="evenodd" d="M3 5a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM3 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM3 19a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" clip-rule="evenodd"></path></svg>
+                <svg class="project-svg-3" xmlns="http://www.w3.org/2000/svg" width="100" height="200" fill="none" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path fill="rgba(176, 218, 255, 1)" fill-rule="evenodd" d="M3 5a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM3 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM3 19a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" clip-rule="evenodd"></path></svg>
+                <div class="structure-project">
+                    <span class="note"></span>
+                    <div class="structure-img-wrapper">
+                        <img src="./img/structure-img.jpg" alt="">
+                    </div>
+                    <div class="structure-desc">
+                        <h1>Membuat <span style="color: #19A7CE;">Struktur</span> Bangunan</h1>
+                        <p>Kami menyediakan layanan profesional dalam pembuatan struktur bangunan yang kokoh dan tahan lama.</p>
+                        <div>
+                            <input type="button" value="View More">
+                        </div>
+                    </div>
+                </div>
+                <div class="construction-project">
+                    <span class="note-2"></span>
+                    <div class="construction-img-wrapper">
+                        <img src="./img/constructor-2.jpg" alt="">
+                    </div>
+                    <div class="construction-desc">
+                        <h1><span style="color: #19A7CE;">Konstruksi</span> Bangunan</h1>
+                        <p>Kami menawarkan layanan konstruksi bangunan yang mencakup seluruh proses, mulai dari perencanaan hingga penyelesaian.</p>
+                        <div>
+                            <input type="button" value="View More">
+                        </div>
+                    </div>
+                </div>
+                <div class="interior-project">
+                    <span class="note-3"></span>
+                    <div class="interior-img-wrapper">
+                        <img src="./img/interior-img.jpg" alt="">
+                    </div>
+                    <div class="interior-desc">
+                        <h1>Design <span style="color: #19A7CE;">Interior</span></h1>
+                        <p>Kami menyediakan layanan desain interior yang mengubah ruang menjadi lingkungan yang estetis dan fungsional.</p>
+                        <div>
+                            <input type="button" value="View More">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Jenis Pekerjaan Section End -->
+
+        <!-- Stuktur Section -->
+        <section id="structure"> 
+            <p style="color: #19A7CE; letter-spacing: 5px; font-size: 13px;">STRUKTUR</p>
+            <h1>Tahapan Dalam Pembuatan Struktur Bangunan</h1>
+            <div class="structure-job-wrapper">
+                <div class="structure-job-desc">
+                    <p>Proses pembuatan struktur bangunan melibatkan beberapa tahapan penting: analisis tanah, analisis perizinan, design, persiapan pekerjaan</p>
+                </div>
+                <div class="structure-step-wrapper">
+                    <div class="structure-step">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="structure-step-desc">
+                        <div>
+                            <p>Analisis Tanah</p>
+                        </div>
+                        <div>
+                            <p>Analisis Perizinan</p>
+                        </div>
+                        <div>
+                            <p>Design</p>
+                        </div>
+                        <div>
+                            <p>Persiapan Pekerjaan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="structure-job-img-wrapper">
+                    <img src="./img/constructor-2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Stuktur Section -->
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-section">
+            <!--?xml version="1.0" standalone="no"?-->
+            <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(176, 218, 255, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(25, 167, 206, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="none" d="M16.6,-27.8C20.4,-26.7,21.4,-19.8,24.4,-14.2C27.5,-8.6,32.5,-4.3,33.1,0.3C33.7,5,29.8,10,25.9,14.2C22.1,18.4,18.3,21.8,14,22.4C9.7,23.1,4.8,21,-0.8,22.3C-6.4,23.7,-12.8,28.5,-14.9,26.6C-17,24.7,-14.8,16,-18.6,10.4C-22.3,4.9,-32,2.4,-33.8,-1.1C-35.6,-4.5,-29.6,-9.1,-24.1,-11.6C-18.6,-14.1,-13.7,-14.7,-9.8,-15.7C-5.9,-16.6,-2.9,-18.1,1.8,-21.1C6.5,-24.2,12.9,-28.9,16.6,-27.8Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="1" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>              </svg>
+            <!--?xml version="1.0" standalone="no"?-->              
+            <svg id="sw-js-blob-svg-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(176, 218, 255, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(25, 167, 206, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="none" d="M16.2,-29C21.7,-24.9,27.4,-22,31,-17.4C34.6,-12.7,36.1,-6.4,33.2,-1.6C30.4,3.1,23.1,6.1,20.6,12.6C18,19,20.2,28.8,17.5,31.6C14.9,34.5,7.4,30.3,3,25.1C-1.4,20,-2.9,13.7,-6.5,11.4C-10,9.1,-15.7,10.7,-16.9,9.5C-18.1,8.2,-14.7,4.1,-11.9,1.6C-9,-0.8,-6.7,-1.6,-7.4,-6.3C-8.2,-10.9,-12.1,-19.3,-11.4,-26.2C-10.7,-33.1,-5.3,-38.4,0,-38.4C5.4,-38.4,10.7,-33.2,16.2,-29Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="1" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>              </svg>
+            <div class="ads-section">
+                <div class="ads-section-desc">
+                    <p style="font-size: 13px; color: #19A7CE; letter-spacing: 5px;">Join Us Now</p>
+                    <h1>Register Now and Get All <span style="color: #19A7CE;">Services</span></h1>
+                </div>
+                <div class="footer-btn">
+                    <input type="button" value="REGISTER NOW">
+                </div>
+            </div>
+        </div>
+        <div class="contact-us-wrapper">
+            <div class="contact-us">
+                <div class="contact-pt">
+                    <div class="contact-img">
+                        <img src="img/senech-black.png" alt="">
+                    </div>
+                    <p>Keindahan dan kerapihan akan menciptakan rumah ideal dan nyaman untuk anda</p>
+                    <div class="social-media">
+                        <i class="fa-solid fa-city"></i>
+                        <i class="fa-solid fa-city"></i>
+                        <i class="fa-solid fa-city"></i>
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <h1>Product</h1>
+                    <div>
+                        <p>Features</p>
+                        <p>Features</p>
+                        <p>Features</p>
+                        <p>Features</p>
+                    </div>
+                </div>
+                <div class="company-footer">
+                    <h1>Company</h1>
+                    <div>
+                        <p>Features</p>
+                        <p>Features</p>
+                        <p>Features</p>
+                        <p>Features</p>
+                        <p>Features</p>
+                    </div>
+                </div>
+                <div class="support-footer">
+                    <h1>Support</h1>
+                    <div>
+                        <p>Features</p>
+                        <p>Features</p>
+                        <p>Features</p>
+                        <p>Features</p>
+                    </div>
+                </div>
+                <div class="faq-footer">
+                    <h1>FAQ</h1>
+                    <div>
+                        <p>Features</p>
+                        <p>Features</p>
+                        <p>Features</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © senech.corp</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+<script src="script.js"></script>
+</body>
+</html>
